@@ -20,6 +20,9 @@
 		E6EBBAB41E99963900935CAE /* breezi_font-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBAB31E99963900935CAE /* breezi_font-webfont.ttf */; };
 		E6EBBAB51E99963900935CAE /* breezi_font-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBAB31E99963900935CAE /* breezi_font-webfont.ttf */; };
 		E6EBBAB61E99963900935CAE /* breezi_font-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBAB31E99963900935CAE /* breezi_font-webfont.ttf */; };
+		E6EBBABC1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */; };
+		E6EBBABD1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */; };
+		E6EBBABE1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,7 @@
 		E6EBBAA51E99943500935CAE /* MirrorAPIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorAPIUITests.m; sourceTree = "<group>"; };
 		E6EBBAA71E99943500935CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6EBBAB31E99963900935CAE /* breezi_font-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "breezi_font-webfont.ttf"; sourceTree = "<group>"; };
+		E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MiamiShades.ttf; sourceTree = "<group>"; };
 		EBE8B3759509A066D0F605DB /* Pods-MirrorAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				E6EBBAB31E99963900935CAE /* breezi_font-webfont.ttf */,
+				E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */,
 			);
 			name = MAPIFont;
 			path = ..;
@@ -319,6 +324,7 @@
 			files = (
 				E6EBBAB41E99963900935CAE /* breezi_font-webfont.ttf in Resources */,
 				E6EBBA901E99943500935CAE /* LaunchScreen.storyboard in Resources */,
+				E6EBBABC1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */,
 				E6EBBA8D1E99943500935CAE /* Assets.xcassets in Resources */,
 				E6EBBA881E99943500935CAE /* MAPIMain.storyboard in Resources */,
 			);
@@ -328,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBABD1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */,
 				E6EBBAB51E99963900935CAE /* breezi_font-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBABE1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */,
 				E6EBBAB61E99963900935CAE /* breezi_font-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,6 +646,7 @@
 				E6EBBAAC1E99943500935CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6EBBAAD1E99943500935CAE /* Build configuration list for PBXNativeTarget "MirrorAPITests" */ = {
 			isa = XCConfigurationList;
@@ -646,6 +655,7 @@
 				E6EBBAAF1E99943500935CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6EBBAB01E99943500935CAE /* Build configuration list for PBXNativeTarget "MirrorAPIUITests" */ = {
 			isa = XCConfigurationList;
@@ -654,6 +664,7 @@
 				E6EBBAB21E99943500935CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
