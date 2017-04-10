@@ -1,0 +1,2 @@
+target ‘MirrorAPI’
+pod 'Unirest', '~> 1.1.4'

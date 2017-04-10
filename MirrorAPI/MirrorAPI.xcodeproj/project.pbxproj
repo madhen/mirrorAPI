@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A5C78014F26A1C375B691D7 /* libPods-MirrorAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC212574CF81F9A45B6F8E /* libPods-MirrorAPI.a */; };
 		E6EBBA7F1E99943500935CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA7E1E99943500935CAE /* main.m */; };
 		E6EBBA821E99943500935CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA811E99943500935CAE /* AppDelegate.m */; };
 		E6EBBA851E99943500935CAE /* MAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA841E99943500935CAE /* MAPIViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54B2D9BE3A98CF9B46F1991E /* Pods-MirrorAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		C8DC212574CF81F9A45B6F8E /* libPods-MirrorAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MirrorAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBBA7A1E99943500935CAE /* MirrorAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBBA7E1E99943500935CAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6EBBA801E99943500935CAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		E6EBBAA51E99943500935CAE /* MirrorAPIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorAPIUITests.m; sourceTree = "<group>"; };
 		E6EBBAA71E99943500935CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6EBBAB31E99963900935CAE /* breezi_font-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "breezi_font-webfont.ttf"; sourceTree = "<group>"; };
+		EBE8B3759509A066D0F605DB /* Pods-MirrorAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5C78014F26A1C375B691D7 /* libPods-MirrorAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980F0B588DD8065212B33766 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54B2D9BE3A98CF9B46F1991E /* Pods-MirrorAPI.debug.xcconfig */,
+				EBE8B3759509A066D0F605DB /* Pods-MirrorAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A596FCD2BA539A1F7BE782EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8DC212574CF81F9A45B6F8E /* libPods-MirrorAPI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6EBBA711E99943400935CAE = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +113,8 @@
 				E6EBBA991E99943500935CAE /* MirrorAPITests */,
 				E6EBBAA41E99943500935CAE /* MirrorAPIUITests */,
 				E6EBBA7B1E99943500935CAE /* Products */,
+				980F0B588DD8065212B33766 /* Pods */,
+				A596FCD2BA539A1F7BE782EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6EBBAAA1E99943500935CAE /* Build configuration list for PBXNativeTarget "MirrorAPI" */;
 			buildPhases = (
+				7E68DB7BAC32CD988919DC07 /* [CP] Check Pods Manifest.lock */,
 				E6EBBA761E99943400935CAE /* Sources */,
 				E6EBBA771E99943400935CAE /* Frameworks */,
 				E6EBBA781E99943400935CAE /* Resources */,
+				D0D9BDD6C23E9C10446CA04E /* [CP] Embed Pods Frameworks */,
+				202A8A41FABCFB17B026EB31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +341,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		202A8A41FABCFB17B026EB31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E68DB7BAC32CD988919DC07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D9BDD6C23E9C10446CA04E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6EBBA761E99943400935CAE /* Sources */ = {
@@ -470,6 +545,7 @@
 		};
 		E6EBBAAB1E99943500935CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B2D9BE3A98CF9B46F1991E /* Pods-MirrorAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G6XQP2Q942;
@@ -482,6 +558,7 @@
 		};
 		E6EBBAAC1E99943500935CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE8B3759509A066D0F605DB /* Pods-MirrorAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G6XQP2Q942;
