@@ -31,8 +31,22 @@
     NSString *urlString = [self.textEntryURL.text.lowercaseString stringByTrimmingCharactersInSet:
                            [NSCharacterSet whitespaceCharacterSet]];
     if ([urlString length]>0){
-        [MAPIURLEntryValidation ]
-    }
+        MAPIURLEntryValidation* validateURL = [[MAPIURLEntryValidation alloc]init];
+        NSString *validatedURL = [validateURL validURL:urlString];
+        if (validatedURL == nil){
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Invalid URL"
+                                                                                     message:@"Please enter a valid http or https URL!"
+                                                                              preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *actionOnAlert = [UIAlertAction actionWithTitle:@"Ok"
+                                                                    style:UIAlertActionStyleDefault
+                                                                  handler:nil];
+            [alertController addAction:actionOnAlert];
+            [self presentViewController:alertController animated:YES completion:nil];
+        } else {
+            _textEntryURL.text = urlString;
+        }
+        
+        }
 }
 - (IBAction)buttonReqHeaderPressed:(id)sender {
 }
