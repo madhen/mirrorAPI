@@ -45,15 +45,7 @@
 }
 
 - (IBAction)buttonAddEditRequestHeader:(UIButton *)sender {
-    NSString *headerName = _textHeaderName.text;
-    NSString *headerValue = _textHeaderValue.text;
-    NSDictionary *headerData = [NSDictionary dictionaryWithObjectsAndKeys:headerName,headerValue, nil];
-    NSLog(@"Data: %@", headerData);
-    [headerNameValueArray addObject:headerData];
-    [_tableViewHeaderNameValue reloadData];
-    _textHeaderValue.text = @"";
-    _textHeaderName.text = @"";
-}
+    }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return headerNameValueArray.count;
@@ -82,5 +74,13 @@
 }
 
 - (IBAction)buttonAdditionalRequestHeader:(UIButton *)sender {
+    NSString *headerName = _textHeaderName.text;
+    NSString *headerValue = _textHeaderValue.text;
+    NSDictionary *headerData = [NSDictionary dictionaryWithObjectsAndKeys:headerName,headerValue, nil];
+    NSLog(@"Data: %@", headerData);
+    [headerNameValueArray addObject:headerData];
+    [_tableViewHeaderNameValue reloadData];
+    _textHeaderValue.text = @"";
+    _textHeaderName.text = @"";
 }
 @end

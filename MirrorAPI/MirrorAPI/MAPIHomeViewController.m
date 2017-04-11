@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-        //    _buttonReqHeader.enabled = NO;
+    _buttonReqHeader.enabled = NO;
     [_buttonReqHeader setAlpha:0.40];
     
     _buttonReqPayload.enabled = NO;
@@ -57,7 +57,7 @@
             [alertController addAction:actionOnAlert];
             [self presentViewController:alertController animated:YES completion:nil];
             
-                //_buttonReqHeader.enabled = NO;
+            _buttonReqHeader.enabled = NO;
             [_buttonReqHeader setAlpha:0.40];
             
             _buttonReqPayload.enabled = NO;
@@ -73,6 +73,7 @@
             _textEntryURL.text = validatedURL;
             
             _buttonReqHeader.enabled = YES;
+        
             [_buttonReqHeader setAlpha:1.00];
             
             _buttonReqPayload.enabled = YES;
@@ -86,8 +87,6 @@
         }
         }
     [self resignFirstResponder];
-}
-- (IBAction)buttonReqHeaderPressed:(id)sender {
 }
 - (IBAction)buttonReqPayloadPressed:(id)sender {
 }

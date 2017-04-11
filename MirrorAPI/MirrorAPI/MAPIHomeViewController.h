@@ -20,8 +20,6 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *buttonReqHeader;
 
-- (IBAction)buttonReqHeaderPressed:(id)sender;
-
 @property (strong, nonatomic) IBOutlet UIButton *buttonReqPayload;
 
 - (IBAction)buttonReqPayloadPressed:(id)sender;

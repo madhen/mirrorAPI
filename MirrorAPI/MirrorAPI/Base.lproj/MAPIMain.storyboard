@@ -67,8 +67,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonReqHeaderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWN-w6-Wge"/>
-                                    <segue destination="fi6-5j-dOF" kind="presentation" id="hGM-hq-SSA"/>
+                                    <segue destination="fi6-5j-dOF" kind="presentation" id="835-B5-19H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-0F-3DI">
@@ -83,6 +82,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonReqPayloadPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5uB-vh-he8"/>
+                                    <segue destination="fi6-5j-dOF" kind="show" id="D55-5P-qHs"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zxm-6V-roZ">
@@ -104,6 +104,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonSaveReqPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ntk-0s-brf"/>
+                                    <segue destination="fi6-5j-dOF" kind="presentation" id="Xcz-XG-A7O"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-m8-BSl">
@@ -127,6 +128,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonSendReqPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2v-uS-QEb"/>
+                                    <segue destination="fi6-5j-dOF" kind="show" id="ZHy-IR-3xO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,7 +161,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonReqHeader" destination="0M5-Xm-Krg" id="oIe-BQ-1AL"/>
+                        <outlet property="buttonReqHeader" destination="0M5-Xm-Krg" id="FsW-7B-DPS"/>
                         <outlet property="buttonReqPayload" destination="nYa-0F-3DI" id="uEd-Wp-qjl"/>
                         <outlet property="buttonSaveReq" destination="uOj-W7-t6S" id="Btw-7f-kuK"/>
                         <outlet property="buttonSendReq" destination="14d-9W-Q3e" id="Pal-dt-WCR"/>
@@ -289,7 +291,6 @@
                         <outlet property="tableViewHeaderNameValue" destination="T1F-t1-Eav" id="Njm-j6-maC"/>
                         <outlet property="textHeaderName" destination="Fp1-xS-ZvK" id="Qtd-b4-ATP"/>
                         <outlet property="textHeaderValue" destination="D6x-yi-zVm" id="TEp-Bl-XJ2"/>
-                        <outlet property="textHeaderValueEntered" destination="D6x-yi-zVm" id="Jug-bE-X4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwp-mO-GP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,4 +298,7 @@
             <point key="canvasLocation" x="933.60000000000002" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZHy-IR-3xO"/>
+    </inferredMetricsTieBreakers>
 </document>
