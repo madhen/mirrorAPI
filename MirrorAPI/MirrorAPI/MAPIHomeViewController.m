@@ -48,14 +48,6 @@
         MAPIURLEntryValidation* validateURL = [[MAPIURLEntryValidation alloc]init];
         NSString *validatedURL = [validateURL validURL:urlString];
         if (validatedURL == nil){
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Invalid URL"
-                                                                                     message:@"Please enter a valid http or https URL!"
-                                                                              preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *actionOnAlert = [UIAlertAction actionWithTitle:@"Ok"
-                                                                    style:UIAlertActionStyleDefault
-                                                                  handler:nil];
-            [alertController addAction:actionOnAlert];
-            [self presentViewController:alertController animated:YES completion:nil];
             
             _buttonReqHeader.enabled = NO;
             [_buttonReqHeader setAlpha:0.40];
@@ -69,11 +61,18 @@
             _buttonSaveReq.enabled = NO;
             [_buttonSaveReq setAlpha:0.40];
             
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Invalid URL"
+                                                                                     message:@"Please enter a valid http or https URL!"
+                                                                              preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *actionOnAlert = [UIAlertAction actionWithTitle:@"Ok"
+                                                                    style:UIAlertActionStyleDefault
+                                                                  handler:nil];
+            [alertController addAction:actionOnAlert];
+            [self presentViewController:alertController animated:YES completion:nil];
         } else {
             _textEntryURL.text = validatedURL;
             
             _buttonReqHeader.enabled = YES;
-        
             [_buttonReqHeader setAlpha:1.00];
             
             _buttonReqPayload.enabled = YES;

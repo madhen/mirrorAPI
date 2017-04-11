@@ -10,14 +10,26 @@
 
 @implementation MAPIRequestModel
 
-@synthesize requestDictionary;
+@synthesize requestDictionary = _requestDictionary;
 
-@synthesize requestURL;
+@synthesize requestURL = _requestURL;
 
-@synthesize requestMethod;
+@synthesize requestMethod = _requestMethod;
 
-@synthesize requestPayload;
+@synthesize requestPayload = _requestPayload;
 
-@synthesize requestHeaderDictionary;
+@synthesize requestHeaderDictionary = _requestHeaderDictionary;
+
+- (void)setRequestURL:(NSURL *)requestURL{
+    _requestURL = requestURL;
+}
+
+- (void) setRequestMethod:(NSString *)requestMethod{
+    _requestMethod = requestMethod;
+}
+
+-(void)setRequestHeaderDictionary:(NSDictionary *)requestHeaderDictionary{
+    _requestHeaderDictionary = [NSDictionary dictionaryWithDictionary:requestHeaderDictionary];
+}
 
 @end

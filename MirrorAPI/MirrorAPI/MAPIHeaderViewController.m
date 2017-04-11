@@ -45,6 +45,7 @@
 }
 
 - (IBAction)buttonAddEditRequestHeader:(UIButton *)sender {
+    [self resignFirstResponder];
     }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
