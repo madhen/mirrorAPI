@@ -23,6 +23,9 @@
 		E6EBBABC1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */; };
 		E6EBBABD1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */; };
 		E6EBBABE1E9C2EAF00935CAE /* MiamiShades.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */; };
+		E6EBBAC11E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */; };
+		E6EBBAC21E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */; };
+		E6EBBAC31E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,8 @@
 		E6EBBAA71E99943500935CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6EBBAB31E99963900935CAE /* breezi_font-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "breezi_font-webfont.ttf"; sourceTree = "<group>"; };
 		E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MiamiShades.ttf; sourceTree = "<group>"; };
+		E6EBBABF1E9D2CC000935CAE /* MAPIURLEntryValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIURLEntryValidation.h; sourceTree = "<group>"; };
+		E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIURLEntryValidation.m; sourceTree = "<group>"; };
 		EBE8B3759509A066D0F605DB /* Pods-MirrorAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +211,8 @@
 		E6EBBABA1E99967700935CAE /* MAPIController */ = {
 			isa = PBXGroup;
 			children = (
+				E6EBBABF1E9D2CC000935CAE /* MAPIURLEntryValidation.h */,
+				E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */,
 			);
 			name = MAPIController;
 			sourceTree = "<group>";
@@ -403,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBAC11E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBA851E99943500935CAE /* MAPIViewController.m in Sources */,
 				E6EBBA821E99943500935CAE /* AppDelegate.m in Sources */,
 				E6EBBA7F1E99943500935CAE /* main.m in Sources */,
@@ -414,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBAC21E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBA9B1E99943500935CAE /* MirrorAPITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBAC31E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBAA61E99943500935CAE /* MirrorAPIUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
