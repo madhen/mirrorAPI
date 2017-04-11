@@ -1,0 +1,23 @@
+//
+//  MAPIRequestModel.m
+//  MirrorAPI
+//
+//  Created by Madhen Kuppuswamy Venkataraman on 4/11/17.
+//  Copyright © 2017 Madhen Kuppuswamy Venkataraman. All rights reserved.
+//
+
+#import "MAPIRequestModel.h"
+
+@implementation MAPIRequestModel
+
+@synthesize requestDictionary;
+
+@synthesize requestURL;
+
+@synthesize requestMethod;
+
+@synthesize requestPayload;
+
+@synthesize requestHeaderDictionary;
+
+@end

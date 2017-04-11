@@ -1,23 +1,36 @@
 //
-//  MAPIViewController.m
+//  MAPIHomeViewController.m
 //  MirrorAPI
 //
 //  Created by Madhen Kuppuswamy Venkataraman on 4/8/17.
 //  Copyright © 2017 Madhen Kuppuswamy Venkataraman. All rights reserved.
 //
 
-#import "MAPIViewController.h"
+#import "MAPIHomeViewController.h"
 #import "MAPIURLEntryValidation.h"
 
-@interface MAPIViewController ()
+@interface MAPIHomeViewController ()
 
 @end
 
-@implementation MAPIViewController
+@implementation MAPIHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _buttonReqHeader.enabled = NO;
+    [_buttonReqHeader setAlpha:0.40];
+    
+    _buttonReqPayload.enabled = NO;
+    [_buttonReqPayload setAlpha:0.40];
+    
+    _buttonSendReq.enabled = NO;
+    [_buttonSendReq setAlpha:0.40];
+    
+    _buttonSaveReq.enabled = NO;
+    [_buttonSaveReq setAlpha:0.40];
+    
 }
 
 
@@ -42,11 +55,36 @@
                                                                   handler:nil];
             [alertController addAction:actionOnAlert];
             [self presentViewController:alertController animated:YES completion:nil];
+            
+            _buttonReqHeader.enabled = NO;
+            [_buttonReqHeader setAlpha:0.40];
+            
+            _buttonReqPayload.enabled = NO;
+            [_buttonReqPayload setAlpha:0.40];
+            
+            _buttonSendReq.enabled = NO;
+            [_buttonSendReq setAlpha:0.40];
+            
+            _buttonSaveReq.enabled = NO;
+            [_buttonSaveReq setAlpha:0.40];
+            
         } else {
             _textEntryURL.text = urlString;
+            
+            _buttonReqHeader.enabled = YES;
+            [_buttonReqHeader setAlpha:1.00];
+            
+            _buttonReqPayload.enabled = YES;
+            [_buttonReqPayload setAlpha:1.00];
+            
+            _buttonSendReq.enabled = YES;
+            [_buttonSendReq setAlpha:1.00];
+            
+            _buttonSaveReq.enabled = YES;
+            [_buttonSaveReq setAlpha:1.00];
         }
-        
         }
+    [self resignFirstResponder];
 }
 - (IBAction)buttonReqHeaderPressed:(id)sender {
 }

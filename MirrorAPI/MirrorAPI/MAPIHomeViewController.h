@@ -1,5 +1,5 @@
 //
-//  MAPIViewController.h
+//  MAPIHomeViewController.h
 //  MirrorAPI
 //
 //  Created by Madhen Kuppuswamy Venkataraman on 4/8/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MAPIViewController : UIViewController
+@interface MAPIHomeViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
 

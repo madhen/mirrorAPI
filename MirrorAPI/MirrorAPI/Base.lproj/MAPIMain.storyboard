@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MAPIViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MAPIHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -63,6 +63,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonReqHeaderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWN-w6-Wge"/>
+                                    <segue destination="fi6-5j-dOF" kind="presentation" id="Pe6-Gb-sWp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-0F-3DI">
@@ -182,6 +183,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="92" y="35.532233883058474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EfO-39-Jsg">
+            <objects>
+                <viewController id="fi6-5j-dOF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="srK-mu-Wfm"/>
+                        <viewControllerLayoutGuide type="bottom" id="GlI-uW-gAD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ryp-80-9MH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e63-hI-NNI" userLabel="labelHomeTitle">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.0019626648780000002" green="0.69120592950000004" blue="0.0030452532590000002" alpha="0.94434267240000003" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0hQ-Cj-tGO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MiamiShades" family="MiamiShades" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="0.84375" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e63-hI-NNI" secondAttribute="trailing" id="BgU-yU-Dxm"/>
+                            <constraint firstItem="e63-hI-NNI" firstAttribute="top" secondItem="ryp-80-9MH" secondAttribute="top" id="QKy-e5-ETF"/>
+                            <constraint firstItem="e63-hI-NNI" firstAttribute="leading" secondItem="ryp-80-9MH" secondAttribute="leading" id="RQ6-Oy-eg0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vwp-mO-GP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="36"/>
         </scene>
     </scenes>
 </document>

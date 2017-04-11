@@ -10,7 +10,7 @@
 		6A5C78014F26A1C375B691D7 /* libPods-MirrorAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC212574CF81F9A45B6F8E /* libPods-MirrorAPI.a */; };
 		E6EBBA7F1E99943500935CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA7E1E99943500935CAE /* main.m */; };
 		E6EBBA821E99943500935CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA811E99943500935CAE /* AppDelegate.m */; };
-		E6EBBA851E99943500935CAE /* MAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA841E99943500935CAE /* MAPIViewController.m */; };
+		E6EBBA851E99943500935CAE /* MAPIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */; };
 		E6EBBA881E99943500935CAE /* MAPIMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBA861E99943500935CAE /* MAPIMain.storyboard */; };
 		E6EBBA8B1E99943500935CAE /* MirrorAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA891E99943500935CAE /* MirrorAPI.xcdatamodeld */; };
 		E6EBBA8D1E99943500935CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EBBA8C1E99943500935CAE /* Assets.xcassets */; };
@@ -26,6 +26,18 @@
 		E6EBBAC11E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */; };
 		E6EBBAC21E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */; };
 		E6EBBAC31E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */; };
+		E6EBBAC61E9D66D900935CAE /* MAPIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC51E9D66D900935CAE /* MAPIRequestManager.m */; };
+		E6EBBAC71E9D66D900935CAE /* MAPIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC51E9D66D900935CAE /* MAPIRequestManager.m */; };
+		E6EBBAC81E9D66D900935CAE /* MAPIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAC51E9D66D900935CAE /* MAPIRequestManager.m */; };
+		E6EBBACB1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBACA1E9D66F300935CAE /* MAPIRequestValidation.m */; };
+		E6EBBACC1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBACA1E9D66F300935CAE /* MAPIRequestValidation.m */; };
+		E6EBBACD1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBACA1E9D66F300935CAE /* MAPIRequestValidation.m */; };
+		E6EBBAD01E9D6A0E00935CAE /* MAPIRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBACF1E9D6A0E00935CAE /* MAPIRequestModel.m */; };
+		E6EBBAD11E9D6A0E00935CAE /* MAPIRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBACF1E9D6A0E00935CAE /* MAPIRequestModel.m */; };
+		E6EBBAD21E9D6A0E00935CAE /* MAPIRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBACF1E9D6A0E00935CAE /* MAPIRequestModel.m */; };
+		E6EBBAD51E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */; };
+		E6EBBAD61E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */; };
+		E6EBBAD71E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +64,8 @@
 		E6EBBA7E1E99943500935CAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6EBBA801E99943500935CAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6EBBA811E99943500935CAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E6EBBA831E99943500935CAE /* MAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPIViewController.h; sourceTree = "<group>"; };
-		E6EBBA841E99943500935CAE /* MAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPIViewController.m; sourceTree = "<group>"; };
+		E6EBBA831E99943500935CAE /* MAPIHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPIHomeViewController.h; sourceTree = "<group>"; };
+		E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPIHomeViewController.m; sourceTree = "<group>"; };
 		E6EBBA871E99943500935CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MAPIMain.storyboard; sourceTree = "<group>"; };
 		E6EBBA8A1E99943500935CAE /* MirrorAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MirrorAPI.xcdatamodel; sourceTree = "<group>"; };
 		E6EBBA8C1E99943500935CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +81,14 @@
 		E6EBBABB1E9C2EAF00935CAE /* MiamiShades.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MiamiShades.ttf; sourceTree = "<group>"; };
 		E6EBBABF1E9D2CC000935CAE /* MAPIURLEntryValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIURLEntryValidation.h; sourceTree = "<group>"; };
 		E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIURLEntryValidation.m; sourceTree = "<group>"; };
+		E6EBBAC41E9D66D900935CAE /* MAPIRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIRequestManager.h; sourceTree = "<group>"; };
+		E6EBBAC51E9D66D900935CAE /* MAPIRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIRequestManager.m; sourceTree = "<group>"; };
+		E6EBBAC91E9D66F300935CAE /* MAPIRequestValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIRequestValidation.h; sourceTree = "<group>"; };
+		E6EBBACA1E9D66F300935CAE /* MAPIRequestValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIRequestValidation.m; sourceTree = "<group>"; };
+		E6EBBACE1E9D6A0E00935CAE /* MAPIRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIRequestModel.h; sourceTree = "<group>"; };
+		E6EBBACF1E9D6A0E00935CAE /* MAPIRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIRequestModel.m; sourceTree = "<group>"; };
+		E6EBBAD31E9D6BDB00935CAE /* MAPIHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIHeaderViewController.h; sourceTree = "<group>"; };
+		E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIHeaderViewController.m; sourceTree = "<group>"; };
 		EBE8B3759509A066D0F605DB /* Pods-MirrorAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,10 +213,12 @@
 		E6EBBAB81E99965400935CAE /* MAPIView */ = {
 			isa = PBXGroup;
 			children = (
-				E6EBBA831E99943500935CAE /* MAPIViewController.h */,
-				E6EBBA841E99943500935CAE /* MAPIViewController.m */,
+				E6EBBA831E99943500935CAE /* MAPIHomeViewController.h */,
+				E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */,
 				E6EBBA861E99943500935CAE /* MAPIMain.storyboard */,
 				E6EBBA8E1E99943500935CAE /* MAPILaunchScreen.storyboard */,
+				E6EBBAD31E9D6BDB00935CAE /* MAPIHeaderViewController.h */,
+				E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */,
 			);
 			name = MAPIView;
 			sourceTree = "<group>";
@@ -204,6 +226,10 @@
 		E6EBBAB91E99966B00935CAE /* MAPIModel */ = {
 			isa = PBXGroup;
 			children = (
+				E6EBBAC41E9D66D900935CAE /* MAPIRequestManager.h */,
+				E6EBBAC51E9D66D900935CAE /* MAPIRequestManager.m */,
+				E6EBBACE1E9D6A0E00935CAE /* MAPIRequestModel.h */,
+				E6EBBACF1E9D6A0E00935CAE /* MAPIRequestModel.m */,
 			);
 			name = MAPIModel;
 			sourceTree = "<group>";
@@ -213,6 +239,8 @@
 			children = (
 				E6EBBABF1E9D2CC000935CAE /* MAPIURLEntryValidation.h */,
 				E6EBBAC01E9D2CC000935CAE /* MAPIURLEntryValidation.m */,
+				E6EBBAC91E9D66F300935CAE /* MAPIRequestValidation.h */,
+				E6EBBACA1E9D66F300935CAE /* MAPIRequestValidation.m */,
 			);
 			name = MAPIController;
 			sourceTree = "<group>";
@@ -410,10 +438,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBAC61E9D66D900935CAE /* MAPIRequestManager.m in Sources */,
 				E6EBBAC11E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
-				E6EBBA851E99943500935CAE /* MAPIViewController.m in Sources */,
+				E6EBBACB1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */,
+				E6EBBA851E99943500935CAE /* MAPIHomeViewController.m in Sources */,
 				E6EBBA821E99943500935CAE /* AppDelegate.m in Sources */,
 				E6EBBA7F1E99943500935CAE /* main.m in Sources */,
+				E6EBBAD01E9D6A0E00935CAE /* MAPIRequestModel.m in Sources */,
+				E6EBBAD51E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E6EBBA8B1E99943500935CAE /* MirrorAPI.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +454,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBAC71E9D66D900935CAE /* MAPIRequestManager.m in Sources */,
+				E6EBBACC1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */,
 				E6EBBAC21E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
+				E6EBBAD11E9D6A0E00935CAE /* MAPIRequestModel.m in Sources */,
+				E6EBBAD61E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E6EBBA9B1E99943500935CAE /* MirrorAPITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +467,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EBBAC81E9D66D900935CAE /* MAPIRequestManager.m in Sources */,
+				E6EBBACD1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */,
 				E6EBBAC31E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
+				E6EBBAD21E9D6A0E00935CAE /* MAPIRequestModel.m in Sources */,
+				E6EBBAD71E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E6EBBAA61E99943500935CAE /* MirrorAPIUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
