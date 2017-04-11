@@ -8,6 +8,7 @@
 
 #import "MAPIHomeViewController.h"
 #import "MAPIURLEntryValidation.h"
+#import "MAPIHeaderViewController.h"
 
 @interface MAPIHomeViewController ()
 
@@ -69,7 +70,7 @@
             [_buttonSaveReq setAlpha:0.40];
             
         } else {
-            _textEntryURL.text = urlString;
+            _textEntryURL.text = validatedURL;
             
             _buttonReqHeader.enabled = YES;
             [_buttonReqHeader setAlpha:1.00];

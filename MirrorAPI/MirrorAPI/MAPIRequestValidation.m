@@ -10,4 +10,8 @@
 
 @implementation MAPIRequestValidation
 
+-(NSDictionary*)validRequest:(NSDictionary*)requestEntered {
+    return [NSDictionary dictionary];
+}
+
 @end

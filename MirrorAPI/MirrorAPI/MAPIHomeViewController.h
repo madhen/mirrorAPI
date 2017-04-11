@@ -28,7 +28,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextView *textViewReqPayload;
 
-@property (strong, nonatomic) IBOutlet UITableView *tableViewReqHeadersAdded;
+    //@property (strong, nonatomic) IBOutlet UITableView *tableViewReqHeadersAdded;
 
 @property (strong, nonatomic) IBOutlet UIButton *buttonSaveReq;
 

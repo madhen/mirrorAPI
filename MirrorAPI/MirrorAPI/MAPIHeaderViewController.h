@@ -8,6 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MAPIHeaderViewController : UIViewController
+@interface MAPIHeaderViewController : UIViewController  <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+{
+    NSMutableArray *headerNameValueArray;
+}
+
+@property (strong, nonatomic) IBOutlet UILabel *labelTitleHeader;
+
+- (IBAction)textHeaderNameEntered:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITextField *textHeaderName;
+
+- (IBAction)textHeaderValueEntered:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITextField *textHeaderValue;
+
+- (IBAction)buttonExitHeaderView:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *buttonAddEditRequestHeader;
+
+- (IBAction)buttonAddEditRequestHeader:(UIButton *)sender;
+
+- (IBAction)buttonAdditionalRequestHeader:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *buttonAdditionalRequestHeader;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableViewHeaderNameValue;
 
 @end
