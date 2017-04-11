@@ -68,7 +68,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonReqHeaderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWN-w6-Wge"/>
-                                    <segue destination="fi6-5j-dOF" kind="show" id="PwH-ZM-C2F"/>
+                                    <segue destination="fi6-5j-dOF" kind="presentation" id="hGM-hq-SSA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-0F-3DI">
@@ -202,8 +202,8 @@
                                     <constraint firstAttribute="height" constant="501" id="25i-qQ-nFz"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="fi6-5j-dOF" id="ABv-xX-1y9"/>
-                                    <outlet property="delegate" destination="fi6-5j-dOF" id="p8r-b7-XLU"/>
+                                    <outlet property="dataSource" destination="fi6-5j-dOF" id="2Dp-Wj-30e"/>
+                                    <outlet property="delegate" destination="fi6-5j-dOF" id="WJb-l9-kkO"/>
                                 </connections>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fp1-xS-ZvK">
