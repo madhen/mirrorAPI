@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MAPIHeaderViewController.h"
 
-@interface MAPIHomeViewController : UIViewController <MAPIHeaderViewControllerDelegate>
+@interface MAPIHomeViewController : UIViewController <MAPIHeaderViewControllerDelegate,UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
 
@@ -32,6 +32,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *buttonSendReq;
 
 - (IBAction)buttonSendReqPressed:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableHeaderPayload;
+
 
 @end
 

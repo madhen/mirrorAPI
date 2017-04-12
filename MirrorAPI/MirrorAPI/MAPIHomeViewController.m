@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     _buttonReqHeader.enabled = NO;
     [_buttonReqHeader setAlpha:0.40];
@@ -29,15 +28,12 @@
     _buttonSendReq.enabled = NO;
     [_buttonSendReq setAlpha:0.40];
     
-//    _buttonSaveReq.enabled = NO;
-//    [_buttonSaveReq setAlpha:0.40];
-//    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 
@@ -57,9 +53,6 @@
             
             _buttonSendReq.enabled = NO;
             [_buttonSendReq setAlpha:0.40];
-            
-//            _buttonSaveReq.enabled = NO;
-//            [_buttonSaveReq setAlpha:0.40];
             
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Invalid URL"
                                                                                      message:@"Please enter a valid http or https URL!"
@@ -81,8 +74,6 @@
             _buttonSendReq.enabled = YES;
             [_buttonSendReq setAlpha:1.00];
             
-//            _buttonSaveReq.enabled = YES;
-//            [_buttonSaveReq setAlpha:1.00];
         }
         }
     [self resignFirstResponder];
@@ -92,9 +83,10 @@
 - (IBAction)buttonSendReqPressed:(id)sender {
 }
 
-    //Protocol for passing header array to home view
+//Protocol for passing header array to home view that will be used by headerview
 -(void)headerAddEditComplete: (MAPIHeaderViewController*) headerViewController{
     _requestHeader = headerViewController.headerNameValueArray;
+    [_tableHeaderPayload reloadData];
 }
 
 
@@ -110,6 +102,24 @@
 }
 
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _requestHeader.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellID = @"cellID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    }
+    NSDictionary *headerData = [_requestHeader objectAtIndex:indexPath.row];
+    NSArray *keys = [headerData allKeys];
+    
+    NSString *cellVal = [NSString stringWithFormat:@"%@ : %@",(NSString *)[headerData valueForKey:keys[0]],(NSString *)keys[0]];
+    cell.textLabel.text = cellVal;
+    
+    return cell;
+}
 
 
 @end

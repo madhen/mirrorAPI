@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6A5C78014F26A1C375B691D7 /* libPods-MirrorAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC212574CF81F9A45B6F8E /* libPods-MirrorAPI.a */; };
+		E69FD9801E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */; };
+		E69FD9811E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */; };
+		E69FD9821E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */; };
 		E6EBBA7F1E99943500935CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA7E1E99943500935CAE /* main.m */; };
 		E6EBBA821E99943500935CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA811E99943500935CAE /* AppDelegate.m */; };
 		E6EBBA851E99943500935CAE /* MAPIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */; };
@@ -54,6 +57,8 @@
 /* Begin PBXFileReference section */
 		54B2D9BE3A98CF9B46F1991E /* Pods-MirrorAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		C8DC212574CF81F9A45B6F8E /* libPods-MirrorAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MirrorAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69FD97E1E9EE3E0005040DE /* MAPIPayloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIPayloadViewController.h; sourceTree = "<group>"; };
+		E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIPayloadViewController.m; sourceTree = "<group>"; };
 		E6EBBA7A1E99943500935CAE /* MirrorAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBBA7E1E99943500935CAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6EBBA801E99943500935CAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -203,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				E6EBBA831E99943500935CAE /* MAPIHomeViewController.h */,
+				E69FD97E1E9EE3E0005040DE /* MAPIPayloadViewController.h */,
+				E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */,
 				E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */,
 				E6EBBA861E99943500935CAE /* MAPIMain.storyboard */,
 				E6EBBA8E1E99943500935CAE /* MAPILaunchScreen.storyboard */,
@@ -422,6 +429,7 @@
 				E6EBBA821E99943500935CAE /* AppDelegate.m in Sources */,
 				E6EBBA7F1E99943500935CAE /* main.m in Sources */,
 				E6EBBAD51E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
+				E69FD9801E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,
 				E6EBBA8B1E99943500935CAE /* MirrorAPI.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +442,7 @@
 				E6EBBAC21E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBAD61E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E6EBBA9B1E99943500935CAE /* MirrorAPITests.m in Sources */,
+				E69FD9811E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +454,7 @@
 				E6EBBAC31E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBAD71E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E6EBBAA61E99943500935CAE /* MirrorAPIUITests.m in Sources */,
+				E69FD9821E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
