@@ -7,7 +7,7 @@
 //
 
 #import "MAPIHeaderViewController.h"
-#import "MAPIRequestModel.h"
+#import "MAPIHomeViewController.h"
 
 @interface MAPIHeaderViewController ()
 
@@ -18,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (!_headerNameValueArray){
     _headerNameValueArray = [[NSMutableArray alloc]init];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,10 +48,7 @@
 }
 
 - (IBAction)buttonAddEditRequestHeader:(UIButton *)sender {
-    if (_headerNameValueArray.count > 0){
-        MAPIRequestModel *requestModal;
-        [requestModal setRequestHeaderArray:_headerNameValueArray];
-    }
+    [_delegate headerAddEditComplete:self];
     [self dismissViewControllerAnimated:YES completion:nil];
     }
 

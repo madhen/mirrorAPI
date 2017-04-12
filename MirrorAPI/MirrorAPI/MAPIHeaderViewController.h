@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class MAPIHomeViewController;
 @class MAPIHeaderViewController;
 
-@protocol MAPIHeaderViewControllerProtocol <NSObject>
+@protocol MAPIHeaderViewControllerDelegate <NSObject>
 
 -(void)headerAddEditComplete: (MAPIHeaderViewController*) headerViewController;
 
@@ -41,5 +42,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *buttonAdditionalRequestHeader;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableViewHeaderNameValue;
+
+@property (weak) id<MAPIHeaderViewControllerDelegate> delegate;
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MAPIHeaderViewController.h"
 
-@interface MAPIHomeViewController : UIViewController <MAPIHeaderViewControllerProtocol>
+@interface MAPIHomeViewController : UIViewController <MAPIHeaderViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
 
@@ -22,6 +22,8 @@
 - (IBAction)textEntryURLEntered:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIButton *buttonReqHeader;
+
+- (IBAction)buttonReqHeader:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutlet UIButton *buttonReqPayload;
 

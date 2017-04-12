@@ -89,8 +89,6 @@
 }
 - (IBAction)buttonReqPayloadPressed:(id)sender {
 }
-- (IBAction)buttonSaveReqPressed:(id)sender {
-}
 - (IBAction)buttonSendReqPressed:(id)sender {
 }
 
@@ -98,6 +96,20 @@
 -(void)headerAddEditComplete: (MAPIHeaderViewController*) headerViewController{
     _requestHeader = headerViewController.headerNameValueArray;
 }
+
+
+- (IBAction)buttonReqHeader:(UIButton *)sender {
+    UIStoryboard* sBoard = [UIStoryboard storyboardWithName:@"MAPIMain" bundle:nil];
+    
+    MAPIHeaderViewController *headerView = [sBoard instantiateViewControllerWithIdentifier:@"headerView"];
+    headerView.delegate = self;
+    if (_requestHeader.count>0){
+        headerView.headerNameValueArray = _requestHeader;
+    }
+    [self presentViewController:headerView animated:(YES) completion:nil];
+}
+
+
 
 
 @end
