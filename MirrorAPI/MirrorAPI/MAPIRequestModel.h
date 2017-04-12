@@ -10,7 +10,7 @@
 
 @interface MAPIRequestModel : NSObject
 
-@property (strong, nonatomic) NSDictionary* requestDictionary;
+@property (strong, nonatomic) NSMutableDictionary* requestDictionary;
 
 @property (strong, nonatomic) NSURL* requestURL;
 
@@ -18,6 +18,6 @@
 
 @property (strong, nonatomic) NSString* requestPayload;
 
-@property (strong, nonatomic) NSDictionary* requestHeaderDictionary;
+@property (strong, nonatomic) NSMutableArray* requestHeaderArray;
 
 @end

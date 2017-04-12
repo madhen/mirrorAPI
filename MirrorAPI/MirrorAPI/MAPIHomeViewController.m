@@ -29,9 +29,9 @@
     _buttonSendReq.enabled = NO;
     [_buttonSendReq setAlpha:0.40];
     
-    _buttonSaveReq.enabled = NO;
-    [_buttonSaveReq setAlpha:0.40];
-    
+//    _buttonSaveReq.enabled = NO;
+//    [_buttonSaveReq setAlpha:0.40];
+//    
 }
 
 
@@ -58,8 +58,8 @@
             _buttonSendReq.enabled = NO;
             [_buttonSendReq setAlpha:0.40];
             
-            _buttonSaveReq.enabled = NO;
-            [_buttonSaveReq setAlpha:0.40];
+//            _buttonSaveReq.enabled = NO;
+//            [_buttonSaveReq setAlpha:0.40];
             
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Invalid URL"
                                                                                      message:@"Please enter a valid http or https URL!"
@@ -81,8 +81,8 @@
             _buttonSendReq.enabled = YES;
             [_buttonSendReq setAlpha:1.00];
             
-            _buttonSaveReq.enabled = YES;
-            [_buttonSaveReq setAlpha:1.00];
+//            _buttonSaveReq.enabled = YES;
+//            [_buttonSaveReq setAlpha:1.00];
         }
         }
     [self resignFirstResponder];
@@ -93,4 +93,11 @@
 }
 - (IBAction)buttonSendReqPressed:(id)sender {
 }
+
+    //Protocol for passing header array to home view
+-(void)headerAddEditComplete: (MAPIHeaderViewController*) headerViewController{
+    _requestHeader = headerViewController.headerNameValueArray;
+}
+
+
 @end

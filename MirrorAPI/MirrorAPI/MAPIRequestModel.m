@@ -18,18 +18,26 @@
 
 @synthesize requestPayload = _requestPayload;
 
-@synthesize requestHeaderDictionary = _requestHeaderDictionary;
+@synthesize requestHeaderArray = _requestHeaderArray;
 
 - (void)setRequestURL:(NSURL *)requestURL{
     _requestURL = requestURL;
+}
+
+-(void)setRequestDictionary:(NSMutableDictionary *)requestDictionary{
+    _requestDictionary = [NSMutableDictionary dictionaryWithDictionary:requestDictionary];
 }
 
 - (void) setRequestMethod:(NSString *)requestMethod{
     _requestMethod = requestMethod;
 }
 
--(void)setRequestHeaderDictionary:(NSDictionary *)requestHeaderDictionary{
-    _requestHeaderDictionary = [NSDictionary dictionaryWithDictionary:requestHeaderDictionary];
+-(void)setRequestHeaderArray:(NSMutableArray *)requestHeaderArray{
+    _requestHeaderArray = [NSMutableArray arrayWithArray:requestHeaderArray];
+}
+
+-(void)setRequestPayload:(NSString *)requestPayload{
+    _requestPayload = requestPayload;
 }
 
 @end

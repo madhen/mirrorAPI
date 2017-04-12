@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MAPIHeaderViewController.h"
 
-@interface MAPIHomeViewController : UIViewController
+@interface MAPIHomeViewController : UIViewController <MAPIHeaderViewControllerProtocol>
 
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
+
+@property (strong) NSMutableArray *requestHeader;
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentControlMethod;
 
@@ -23,14 +26,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *buttonReqPayload;
 
 - (IBAction)buttonReqPayloadPressed:(id)sender;
-
-@property (strong, nonatomic) IBOutlet UITextView *textViewReqPayload;
-
-    //@property (strong, nonatomic) IBOutlet UITableView *tableViewReqHeadersAdded;
-
-@property (strong, nonatomic) IBOutlet UIButton *buttonSaveReq;
-
-- (IBAction)buttonSaveReqPressed:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIButton *buttonSendReq;
 
