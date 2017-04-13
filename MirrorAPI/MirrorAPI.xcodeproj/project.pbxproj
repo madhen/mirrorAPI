@@ -132,6 +132,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E69FD9851E9F2A5A005040DE /* MAPIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				E6EBBA861E99943500935CAE /* MAPIMain.storyboard */,
+				E6EBBA8E1E99943500935CAE /* MAPILaunchScreen.storyboard */,
+			);
+			name = MAPIStoryboard;
+			sourceTree = "<group>";
+		};
 		E6EBBA711E99943400935CAE = {
 			isa = PBXGroup;
 			children = (
@@ -209,14 +218,13 @@
 		E6EBBAB81E99965400935CAE /* MAPIView */ = {
 			isa = PBXGroup;
 			children = (
+				E69FD9851E9F2A5A005040DE /* MAPIStoryboard */,
 				E6EBBA831E99943500935CAE /* MAPIHomeViewController.h */,
-				E69FD97E1E9EE3E0005040DE /* MAPIPayloadViewController.h */,
-				E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */,
 				E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */,
-				E6EBBA861E99943500935CAE /* MAPIMain.storyboard */,
-				E6EBBA8E1E99943500935CAE /* MAPILaunchScreen.storyboard */,
 				E6EBBAD31E9D6BDB00935CAE /* MAPIHeaderViewController.h */,
 				E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */,
+				E69FD97E1E9EE3E0005040DE /* MAPIPayloadViewController.h */,
+				E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */,
 			);
 			name = MAPIView;
 			sourceTree = "<group>";

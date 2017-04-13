@@ -94,6 +94,11 @@
     [_tableHeaderPayload reloadData];
 }
 
+//Protocol for passing payload data to home view
+-(void)payloadSubmit: (MAPIPayloadViewController*) payloadViewController{
+    _requestPayload = [NSString stringWithString:payloadViewController.payloadData];
+    NSLog(@"%@", _requestPayload);
+}
 
 - (IBAction)buttonReqHeader:(UIButton *)sender {
     UIStoryboard* sBoard = [UIStoryboard storyboardWithName:@"MAPIMain" bundle:nil];

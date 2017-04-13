@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (!_payloadData){
+        _textViewPayloadData.text = @"";
+    } else {
+        _textViewPayloadData.text = _payloadData;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

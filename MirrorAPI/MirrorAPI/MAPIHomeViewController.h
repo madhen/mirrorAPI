@@ -15,6 +15,8 @@
 
 @property (strong) NSMutableArray *requestHeader;
 
+@property (strong) NSString *requestPayload;
+
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentControlMethod;
 
 @property (strong, nonatomic) IBOutlet UITextField *textEntryURL;

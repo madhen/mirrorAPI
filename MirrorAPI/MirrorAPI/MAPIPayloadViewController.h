@@ -19,7 +19,7 @@
 
 @interface MAPIPayloadViewController : UIViewController
 
-@property (strong, nonatomic) NSString *payloadData;
+@property (strong, nonatomic) NSMutableString *payloadData;
 
 - (IBAction)buttonExitPayloadView:(UIButton *)sender;
 
