@@ -95,8 +95,7 @@
     
     [self presentViewController:payloadView animated:(YES) completion:nil];
 }
-- (IBAction)buttonSendReqPressed:(id)sender {
-}
+
 
 //Protocol for passing header array to home view that will be used by headerview
 -(void)headerAddEditComplete: (MAPIHeaderViewController*) headerViewController{
@@ -140,6 +139,15 @@
     cell.textLabel.text = cellVal;
     
     return cell;
+}
+
+
+- (IBAction)buttonSendReqPressed:(id)sender {
+    UIStoryboard* responseStoryBoard = [UIStoryboard storyboardWithName:@"MAPIMain" bundle:nil];
+    
+    MAPIHeaderViewController *headerView = [responseStoryBoard instantiateViewControllerWithIdentifier:@"responseView"];
+    
+    [self presentViewController:headerView animated:(YES) completion:nil];
 }
 
 

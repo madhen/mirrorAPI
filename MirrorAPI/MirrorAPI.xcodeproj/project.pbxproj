@@ -37,6 +37,9 @@
 		E6EBBAD51E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */; };
 		E6EBBAD61E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */; };
 		E6EBBAD71E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */; };
+		E6FEFFA91EA00B1A0004D074 /* MAPIResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FEFFA81EA00B1A0004D074 /* MAPIResponseViewController.m */; };
+		E6FEFFAA1EA00B1A0004D074 /* MAPIResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FEFFA81EA00B1A0004D074 /* MAPIResponseViewController.m */; };
+		E6FEFFAB1EA00B1A0004D074 /* MAPIResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FEFFA81EA00B1A0004D074 /* MAPIResponseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,8 @@
 		E6EBBACA1E9D66F300935CAE /* MAPIRequestValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIRequestValidation.m; sourceTree = "<group>"; };
 		E6EBBAD31E9D6BDB00935CAE /* MAPIHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIHeaderViewController.h; sourceTree = "<group>"; };
 		E6EBBAD41E9D6BDB00935CAE /* MAPIHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIHeaderViewController.m; sourceTree = "<group>"; };
+		E6FEFFA71EA00B1A0004D074 /* MAPIResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPIResponseViewController.h; sourceTree = "<group>"; };
+		E6FEFFA81EA00B1A0004D074 /* MAPIResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPIResponseViewController.m; sourceTree = "<group>"; };
 		EBE8B3759509A066D0F605DB /* Pods-MirrorAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorAPI/Pods-MirrorAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				E69FD9851E9F2A5A005040DE /* MAPIStoryboard */,
+				E6FEFFA71EA00B1A0004D074 /* MAPIResponseViewController.h */,
+				E6FEFFA81EA00B1A0004D074 /* MAPIResponseViewController.m */,
 				E6EBBA831E99943500935CAE /* MAPIHomeViewController.h */,
 				E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */,
 				E6EBBAD31E9D6BDB00935CAE /* MAPIHeaderViewController.h */,
@@ -441,6 +448,7 @@
 				E6EBBAD51E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E69FD9801E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,
 				E6EBBA8B1E99943500935CAE /* MirrorAPI.xcdatamodeld in Sources */,
+				E6FEFFA91EA00B1A0004D074 /* MAPIResponseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +459,7 @@
 				E6EBBACC1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */,
 				E6EBBAC21E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBAD61E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
+				E6FEFFAA1EA00B1A0004D074 /* MAPIResponseViewController.m in Sources */,
 				E6EBBA9B1E99943500935CAE /* MirrorAPITests.m in Sources */,
 				E69FD9831E9EE425005040DE /* MAPIHomeViewController.m in Sources */,
 				E69FD9811E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,
@@ -464,6 +473,7 @@
 				E6EBBACD1E9D66F300935CAE /* MAPIRequestValidation.m in Sources */,
 				E6EBBAC31E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBAD71E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
+				E6FEFFAB1EA00B1A0004D074 /* MAPIResponseViewController.m in Sources */,
 				E6EBBAA61E99943500935CAE /* MirrorAPIUITests.m in Sources */,
 				E69FD9841E9EE426005040DE /* MAPIHomeViewController.m in Sources */,
 				E69FD9821E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,

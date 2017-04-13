@@ -67,7 +67,7 @@
                                     <action selector="buttonReqPayloadPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5uB-vh-he8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-m8-BSl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-m8-BSl">
                                 <rect key="frame" x="8" y="118" width="359" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -114,7 +114,6 @@
                                 <rect key="frame" x="16" y="431" width="343" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -156,6 +155,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="90.400000000000006" y="34.632683658170919"/>
+        </scene>
+        <!--Response View Controller-->
+        <scene sceneID="CfX-Et-X4P">
+            <objects>
+                <viewController storyboardIdentifier="responseView" id="dEO-ZL-IXb" customClass="MAPIResponseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q1c-vj-TOL"/>
+                        <viewControllerLayoutGuide type="bottom" id="h9f-cB-xMa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fYL-lT-OCn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESPONSE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sff-eb-w1D" userLabel="labelHeaderTitle">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.0019626648780000002" green="0.69120592950000004" blue="0.0030452532590000002" alpha="0.94434267240000003" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="PxB-5q-4wi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="0.84375" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-kZ-cIT">
+                                <rect key="frame" x="24" y="78" width="343" height="235"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adp-f4-O1J">
+                                <rect key="frame" x="337" y="20" width="30" height="36"/>
+                                <fontDescription key="fontDescription" name="BreeziIconSet" family="Breezi Icon Set" pointSize="25"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonExitHeaderView:" destination="fi6-5j-dOF" eventType="touchUpInside" id="oqG-ua-LaS"/>
+                                    <action selector="exitResponseView:" destination="dEO-ZL-IXb" eventType="touchUpInside" id="2LR-Qg-A4d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OxA-kZ-cIT" firstAttribute="top" secondItem="Sff-eb-w1D" secondAttribute="bottom" constant="8" id="9E6-Uh-4m3"/>
+                            <constraint firstItem="adp-f4-O1J" firstAttribute="top" secondItem="Q1c-vj-TOL" secondAttribute="bottom" id="BIW-7O-FrA"/>
+                            <constraint firstItem="OxA-kZ-cIT" firstAttribute="trailing" secondItem="adp-f4-O1J" secondAttribute="trailing" id="GNz-6i-Q5E"/>
+                            <constraint firstItem="h9f-cB-xMa" firstAttribute="top" secondItem="OxA-kZ-cIT" secondAttribute="bottom" constant="354" id="LQu-Q5-Y0S"/>
+                            <constraint firstItem="Sff-eb-w1D" firstAttribute="leading" secondItem="fYL-lT-OCn" secondAttribute="leading" id="cNy-Mi-ewi"/>
+                            <constraint firstItem="OxA-kZ-cIT" firstAttribute="leading" secondItem="fYL-lT-OCn" secondAttribute="leadingMargin" constant="8" id="h4B-vi-z8a"/>
+                            <constraint firstAttribute="trailing" secondItem="Sff-eb-w1D" secondAttribute="trailing" id="qSm-LO-lCt"/>
+                            <constraint firstItem="Sff-eb-w1D" firstAttribute="top" secondItem="fYL-lT-OCn" secondAttribute="top" id="wYZ-EK-uAf"/>
+                            <constraint firstItem="OxA-kZ-cIT" firstAttribute="trailing" secondItem="fYL-lT-OCn" secondAttribute="trailingMargin" constant="8" id="yfs-Tm-Ium"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelResponseTitle" destination="Sff-eb-w1D" id="5D3-8N-1SK"/>
+                        <outlet property="textViewResponse" destination="OxA-kZ-cIT" id="Vwg-ib-tbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pd1-sT-PRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="844.22788605697156"/>
         </scene>
         <!--Header View Controller-->
         <scene sceneID="EfO-39-Jsg">
