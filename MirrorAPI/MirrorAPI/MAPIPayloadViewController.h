@@ -29,5 +29,6 @@
 
 @property (strong, nonatomic) IBOutlet UITextView *textViewPayloadData;
 
+@property (weak) id<MAPIPayloadViewControllerDelegate> delegate;
 
 @end

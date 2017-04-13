@@ -7,6 +7,7 @@
 //
 
 #import "MAPIPayloadViewController.h"
+#import "MAPIHomeViewController.h"
 
 @interface MAPIPayloadViewController ()
 
@@ -43,6 +44,11 @@
 }
 
 - (IBAction)buttonAddPayload:(UIButton *)sender {
+    NSString *payloadString = [self.textViewPayloadData.text.lowercaseString stringByTrimmingCharactersInSet:
+                           [NSCharacterSet whitespaceCharacterSet]];
+    if ([payloadString length]>0){
+        _payloadData = [NSMutableString stringWithString:_textViewPayloadData.text];
+    }
 }
 
 - (IBAction)segmentControlPayloadType:(UISegmentedControl *)sender {

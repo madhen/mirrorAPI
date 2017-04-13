@@ -80,9 +80,19 @@
     [self resignFirstResponder];
 }
 - (IBAction)buttonReqPayloadPressed:(id)sender {
+    
     UIStoryboard* payloadStoryBoard = [UIStoryboard storyboardWithName:@"MAPIMain" bundle:nil];
     
     MAPIPayloadViewController *payloadView = [payloadStoryBoard instantiateViewControllerWithIdentifier:@"payloadView"];
+    payloadView.delegate = self;
+    
+    NSString *payloadString = [_requestPayload.lowercaseString stringByTrimmingCharactersInSet:
+                               [NSCharacterSet whitespaceCharacterSet]];
+    if ([payloadString length]>0){
+        payloadView.payloadData = [NSMutableString stringWithString:_requestPayload];
+    }
+    
+    
     [self presentViewController:payloadView animated:(YES) completion:nil];
 }
 - (IBAction)buttonSendReqPressed:(id)sender {
