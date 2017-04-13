@@ -84,7 +84,6 @@
     UIStoryboard* payloadStoryBoard = [UIStoryboard storyboardWithName:@"MAPIMain" bundle:nil];
     
     MAPIPayloadViewController *payloadView = [payloadStoryBoard instantiateViewControllerWithIdentifier:@"payloadView"];
-    payloadView.delegate = self;
     
     NSString *payloadString = [_requestPayload.lowercaseString stringByTrimmingCharactersInSet:
                                [NSCharacterSet whitespaceCharacterSet]];

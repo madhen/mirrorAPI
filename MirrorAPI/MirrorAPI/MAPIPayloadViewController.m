@@ -48,6 +48,7 @@
                            [NSCharacterSet whitespaceCharacterSet]];
     if ([payloadString length]>0){
         _payloadData = [NSMutableString stringWithString:_textViewPayloadData.text];
+        [_delegate payloadSubmit:self];
     }
 }
 

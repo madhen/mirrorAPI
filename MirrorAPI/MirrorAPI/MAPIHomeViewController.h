@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MAPIHeaderViewController.h"
+#import "MAPIPayloadViewController.h"
 
-@interface MAPIHomeViewController : UIViewController <MAPIHeaderViewControllerDelegate,UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface MAPIHomeViewController : UIViewController <MAPIHeaderViewControllerDelegate,MAPIPayloadViewControllerDelegate,UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
 
