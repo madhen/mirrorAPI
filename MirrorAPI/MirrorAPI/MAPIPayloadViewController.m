@@ -44,12 +44,15 @@
 }
 
 - (IBAction)buttonAddPayload:(UIButton *)sender {
-    NSString *payloadString = [self.textViewPayloadData.text.lowercaseString stringByTrimmingCharactersInSet:
-                           [NSCharacterSet whitespaceCharacterSet]];
-    if ([payloadString length]>0){
+    
+    
+        //NSString *payloadString = [self.textViewPayloadData.text.lowercaseString stringByTrimmingCharactersInSet:
+        //[NSCharacterSet whitespaceCharacterSet]];
+        //if ([payloadString length]>0){
         _payloadData = [NSMutableString stringWithString:_textViewPayloadData.text];
         [_delegate payloadSubmit:self];
-    }
+        //}
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)segmentControlPayloadType:(UISegmentedControl *)sender {

@@ -91,6 +91,7 @@
         payloadView.payloadData = [NSMutableString stringWithString:_requestPayload];
     }
     
+    payloadView.delegate=self;
     
     [self presentViewController:payloadView animated:(YES) completion:nil];
 }
@@ -107,6 +108,7 @@
 -(void)payloadSubmit: (MAPIPayloadViewController*) payloadViewController{
     _requestPayload = [NSString stringWithString:payloadViewController.payloadData];
     NSLog(@"%@", _requestPayload);
+    _textViewPayloadData.text = _requestPayload;
 }
 
 - (IBAction)buttonReqHeader:(UIButton *)sender {

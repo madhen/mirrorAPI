@@ -38,6 +38,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tableHeaderPayload;
 
+@property (strong, nonatomic) IBOutlet UITextView *textViewPayloadData;
 
 @end
 
