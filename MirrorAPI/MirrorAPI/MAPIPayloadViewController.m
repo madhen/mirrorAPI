@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)buttonExitPayloadView:(UIButton *)sender {
+}
+
+- (IBAction)buttonAddPayload:(UIButton *)sender {
+}
+
+- (IBAction)segmentControlPayloadType:(UISegmentedControl *)sender {
+}
 @end

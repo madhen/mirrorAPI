@@ -11,6 +11,8 @@
 		E69FD9801E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */; };
 		E69FD9811E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */; };
 		E69FD9821E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FD97F1E9EE3E0005040DE /* MAPIPayloadViewController.m */; };
+		E69FD9831E9EE425005040DE /* MAPIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */; };
+		E69FD9841E9EE426005040DE /* MAPIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */; };
 		E6EBBA7F1E99943500935CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA7E1E99943500935CAE /* main.m */; };
 		E6EBBA821E99943500935CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA811E99943500935CAE /* AppDelegate.m */; };
 		E6EBBA851E99943500935CAE /* MAPIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EBBA841E99943500935CAE /* MAPIHomeViewController.m */; };
@@ -442,6 +444,7 @@
 				E6EBBAC21E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBAD61E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E6EBBA9B1E99943500935CAE /* MirrorAPITests.m in Sources */,
+				E69FD9831E9EE425005040DE /* MAPIHomeViewController.m in Sources */,
 				E69FD9811E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +457,7 @@
 				E6EBBAC31E9D2CC000935CAE /* MAPIURLEntryValidation.m in Sources */,
 				E6EBBAD71E9D6BDB00935CAE /* MAPIHeaderViewController.m in Sources */,
 				E6EBBAA61E99943500935CAE /* MirrorAPIUITests.m in Sources */,
+				E69FD9841E9EE426005040DE /* MAPIHomeViewController.m in Sources */,
 				E69FD9821E9EE3E0005040DE /* MAPIPayloadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

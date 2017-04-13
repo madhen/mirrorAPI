@@ -8,6 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
+@class MAPIHomeViewController;
+@class MAPIPayloadViewController;
+
+@protocol MAPIPayloadViewControllerDelegate <NSObject>
+
+-(void)payloadSubmit: (MAPIPayloadViewController*) payloadViewController;
+
+@end
+
 @interface MAPIPayloadViewController : UIViewController
+
+@property (strong, nonatomic) NSString *payloadData;
+
+- (IBAction)buttonExitPayloadView:(UIButton *)sender;
+
+- (IBAction)buttonAddPayload:(UIButton *)sender;
+
+- (IBAction)segmentControlPayloadType:(UISegmentedControl *)sender;
+
+@property (strong, nonatomic) IBOutlet UITextView *textViewPayloadData;
+
 
 @end

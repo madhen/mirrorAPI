@@ -53,7 +53,7 @@
                                 <color key="textColor" white="1" alpha="0.84375" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-0F-3DI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-0F-3DI">
                                 <rect key="frame" x="267" y="160" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.83128160238265991" green="0.8314250111579895" blue="0.83127254247665405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -273,7 +273,7 @@
         <!--Payload View Controller-->
         <scene sceneID="FxM-lE-WjW">
             <objects>
-                <viewController id="sYI-de-isU" customClass="MAPIPayloadViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="payloadView" id="sYI-de-isU" customClass="MAPIPayloadViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K9L-SW-qhw"/>
                         <viewControllerLayoutGuide type="bottom" id="aHb-Sa-UZG"/>
@@ -299,6 +299,9 @@
                                 <state key="normal" title="x">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonExitPayloadView:" destination="sYI-de-isU" eventType="touchUpInside" id="asC-0m-CyN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFO-rU-iTb">
                                 <rect key="frame" x="329" y="20" width="30" height="30"/>
@@ -307,6 +310,9 @@
                                 <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonAddPayload:" destination="sYI-de-isU" eventType="touchUpInside" id="aDM-w1-G0x"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oIN-Gd-5U8" userLabel="segmentControlMethod">
                                 <rect key="frame" x="8" y="78" width="359" height="29"/>
@@ -319,12 +325,15 @@
                                     <segment title="File"/>
                                 </segments>
                                 <color key="tintColor" red="0.24988610829999999" green="0.36260016029999997" blue="0.2056601273" alpha="0.94434267240000003" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentControlPayloadType:" destination="sYI-de-isU" eventType="valueChanged" id="toP-uI-yPc"/>
+                                </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RPw-gW-IFP">
                                 <rect key="frame" x="16" y="114" width="343" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -336,10 +345,13 @@
                             <constraint firstItem="CmI-oZ-lyW" firstAttribute="top" secondItem="3Ws-fs-4XS" secondAttribute="top" id="jBi-xw-bfT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textViewPayloadData" destination="RPw-gW-IFP" id="6Fe-Dj-vPc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5w-PH-QdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1893.5999999999999" y="34.632683658170919"/>
+            <point key="canvasLocation" x="1868" y="56"/>
         </scene>
     </scenes>
 </document>

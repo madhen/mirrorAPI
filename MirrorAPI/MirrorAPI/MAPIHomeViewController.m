@@ -9,6 +9,7 @@
 #import "MAPIHomeViewController.h"
 #import "MAPIURLEntryValidation.h"
 #import "MAPIHeaderViewController.h"
+#import "MAPIPayloadViewController.h"
 
 @interface MAPIHomeViewController ()
 
@@ -19,14 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _buttonReqHeader.enabled = NO;
-    [_buttonReqHeader setAlpha:0.40];
-    
-    _buttonReqPayload.enabled = NO;
-    [_buttonReqPayload setAlpha:0.40];
-    
-    _buttonSendReq.enabled = NO;
-    [_buttonSendReq setAlpha:0.40];
+//    _buttonReqHeader.enabled = NO;
+//    [_buttonReqHeader setAlpha:0.40];
+//    
+//    _buttonReqPayload.enabled = NO;
+//    [_buttonReqPayload setAlpha:0.40];
+//    
+//    _buttonSendReq.enabled = NO;
+//    [_buttonSendReq setAlpha:0.40];
     
 }
 
@@ -45,14 +46,14 @@
         NSString *validatedURL = [validateURL validURL:urlString];
         if (validatedURL == nil){
             
-            _buttonReqHeader.enabled = NO;
-            [_buttonReqHeader setAlpha:0.40];
-            
-            _buttonReqPayload.enabled = NO;
-            [_buttonReqPayload setAlpha:0.40];
-            
-            _buttonSendReq.enabled = NO;
-            [_buttonSendReq setAlpha:0.40];
+//            _buttonReqHeader.enabled = NO;
+//            [_buttonReqHeader setAlpha:0.40];
+//            
+//            _buttonReqPayload.enabled = NO;
+//            [_buttonReqPayload setAlpha:0.40];
+//            
+//            _buttonSendReq.enabled = NO;
+//            [_buttonSendReq setAlpha:0.40];
             
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Invalid URL"
                                                                                      message:@"Please enter a valid http or https URL!"
@@ -65,20 +66,24 @@
         } else {
             _textEntryURL.text = validatedURL;
             
-            _buttonReqHeader.enabled = YES;
-            [_buttonReqHeader setAlpha:1.00];
-            
-            _buttonReqPayload.enabled = YES;
-            [_buttonReqPayload setAlpha:1.00];
-            
-            _buttonSendReq.enabled = YES;
-            [_buttonSendReq setAlpha:1.00];
+//            _buttonReqHeader.enabled = YES;
+//            [_buttonReqHeader setAlpha:1.00];
+//            
+//            _buttonReqPayload.enabled = YES;
+//            [_buttonReqPayload setAlpha:1.00];
+//            
+//            _buttonSendReq.enabled = YES;
+//            [_buttonSendReq setAlpha:1.00];
             
         }
         }
     [self resignFirstResponder];
 }
 - (IBAction)buttonReqPayloadPressed:(id)sender {
+    UIStoryboard* payloadStoryBoard = [UIStoryboard storyboardWithName:@"MAPIMain" bundle:nil];
+    
+    MAPIPayloadViewController *payloadView = [payloadStoryBoard instantiateViewControllerWithIdentifier:@"payloadView"];
+    [self presentViewController:payloadView animated:(YES) completion:nil];
 }
 - (IBAction)buttonSendReqPressed:(id)sender {
 }
